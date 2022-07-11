@@ -1,0 +1,195 @@
+﻿<UserControl x:Class="RuntimeMegaloObjectDebugger.MegaloObjectData"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:RuntimeMegaloObjectDebugger"
+             mc:Ignorable="d" HorizontalAlignment="Center" >
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition Width="85"/>
+        </Grid.ColumnDefinitions>
+        <StackPanel Margin="0,0,10,0">
+            <TextBlock Height="18" Text="Scripted_obj_index" Foreground="White" HorizontalAlignment="Right"/>
+            <TextBlock Height="18" Text="Fireteam_spawn Perms" Foreground="White" HorizontalAlignment="Right"/>
+            <TextBlock Height="18" Text="Waypoint_token #1" Foreground="White" HorizontalAlignment="Right"/>
+            <TextBlock Height="18" Text="Waypoint_token #2" Foreground="White" HorizontalAlignment="Right"/>
+            <TextBlock Height="18" Text="Waypoint_string Index" Foreground="White" HorizontalAlignment="Right"/>
+            <TextBlock Height="18" Text="Waypoint_icon" Foreground="White" HorizontalAlignment="Right"/>
+            <TextBlock Height="18" Text="Waypoint_vis Perms" Foreground="White" HorizontalAlignment="Right"/>
+            <TextBlock Height="18" Text="Waypoint_priority" Foreground="White" HorizontalAlignment="Right"/>
+            <TextBlock Height="18" Text="Waypoint_timer" Foreground="White" HorizontalAlignment="Right"/>
+            <TextBlock Height="18" Text="Waypoint_min_range" Foreground="White" HorizontalAlignment="Right"/>
+            <TextBlock Height="18" Text="Waypoint_max_range" Foreground="White" HorizontalAlignment="Right"/>
+            <TextBlock Height="18" Text="Pickup Perms" Foreground="White" HorizontalAlignment="Right"/>
+            <TextBlock Height="18" Text="Spawn Perms" Foreground="White" HorizontalAlignment="Right"/>
+            <TextBlock Height="18" Text="Boundary_vis Perms" Foreground="White" HorizontalAlignment="Right"/>
+            <TextBlock Height="18" Text="Boundary_player_color" Foreground="White" HorizontalAlignment="Right"/>
+            <TextBlock Height="18" Text="Object Idendifier" Foreground="White" HorizontalAlignment="Right"/>
+            <TextBlock Height="18" Text="object.object[0]" Foreground="White" HorizontalAlignment="Right"/>
+            <TextBlock Height="18" Text="object.object[1]" Foreground="White" HorizontalAlignment="Right"/>
+            <TextBlock Height="18" Text="object.object[2]" Foreground="White" HorizontalAlignment="Right"/>
+            <TextBlock Height="18" Text="object.object[3]" Foreground="White" HorizontalAlignment="Right"/>
+            <TextBlock Height="18" Text="object.team[0]" Foreground="White" HorizontalAlignment="Right"/>
+            <TextBlock Height="18" Text="object.team[1]" Foreground="White" HorizontalAlignment="Right"/>
+            <TextBlock Height="18" Text="object.number[0]" Foreground="White" HorizontalAlignment="Right"/>
+            <TextBlock Height="18" Text="object.number[1]" Foreground="White" HorizontalAlignment="Right"/>
+            <TextBlock Height="18" Text="object.number[2]" Foreground="White" HorizontalAlignment="Right"/>
+            <TextBlock Height="18" Text="object.number[3]" Foreground="White" HorizontalAlignment="Right"/>
+            <TextBlock Height="18" Text="object.number[4]" Foreground="White" HorizontalAlignment="Right"/>
+            <TextBlock Height="18" Text="object.number[5]" Foreground="White" HorizontalAlignment="Right"/>
+            <TextBlock Height="18" Text="object.number[6]" Foreground="White" HorizontalAlignment="Right"/>
+            <TextBlock Height="18" Text="object.number[7]" Foreground="White" HorizontalAlignment="Right"/>
+            <TextBlock Height="18" Text="Unknown_2byte" Foreground="White" HorizontalAlignment="Right"/>
+            <TextBlock Height="18" Text="object.timer[0]" Foreground="White" HorizontalAlignment="Right"/>
+            <TextBlock Height="18" Text="object.timer[1]" Foreground="White" HorizontalAlignment="Right"/>
+            <TextBlock Height="18" Text="object.timer[2]" Foreground="White" HorizontalAlignment="Right"/>
+            <TextBlock Height="18" Text="object.timer[3]" Foreground="White" HorizontalAlignment="Right"/>
+            <TextBlock Height="18" Text="object.player[0]" Foreground="White" HorizontalAlignment="Right"/>
+            <TextBlock Height="18" Text="object.player[1]" Foreground="White" HorizontalAlignment="Right"/>
+            <TextBlock Height="18" Text="object.player[2]" Foreground="White" HorizontalAlignment="Right"/>
+            <TextBlock Height="18" Text="object.player[3]" Foreground="White" HorizontalAlignment="Right"/>
+            <TextBlock Height="18" Text="Unknown_timer" Foreground="White" HorizontalAlignment="Right"/>
+            <TextBlock Height="18" Text="Progress_bar Perms" Foreground="White" HorizontalAlignment="Right"/>
+            <TextBlock Height="18" Text="Unknown_4byte" Foreground="White" HorizontalAlignment="Right"/>
+        </StackPanel>
+        <StackPanel Grid.Column="1">
+            <TextBox Tag="int16:0" TextChanged="scripted_obj_index_TextChanged" x:Name="scripted_obj_index" Height="18" Text="???" Width="85" Background="#FF383838" Foreground="White" BorderBrush="#FFB5B5B5" />
+            <TextBox Tag="int16:2" TextChanged="scripted_obj_index_TextChanged" x:Name="fireteam_spawn_perms" Height="18" Text="???" Grid.Column="0" Background="#FF383838" Foreground="White" BorderBrush="#FFB5B5B5"/>
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+                <TextBox Tag="int8:4" TextChanged="scripted_obj_index_TextChanged" x:Name="waypoint_token_1_1" Height="18" Text="???" Grid.Column="0" Background="#FF383838" Foreground="White" BorderBrush="#FFB5B5B5"/>
+                <TextBox Tag="int8:5" TextChanged="scripted_obj_index_TextChanged" x:Name="waypoint_token_1_2" Height="18" Text="???" Grid.Column="1" Background="#FF383838" Foreground="White" BorderBrush="#FFB5B5B5"/>
+                <TextBox Tag="int8:6" TextChanged="scripted_obj_index_TextChanged" x:Name="waypoint_token_1_3" Height="18" Text="???" Grid.Column="2" Background="#FF383838" Foreground="White" BorderBrush="#FFB5B5B5"/>
+                <TextBox Tag="int8:7" TextChanged="scripted_obj_index_TextChanged" x:Name="waypoint_token_1_4" Height="18" Text="???" Grid.Column="3" Background="#FF383838" Foreground="White" BorderBrush="#FFB5B5B5"/>
+            </Grid>
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+                <TextBox Tag="int8:8" TextChanged="scripted_obj_index_TextChanged" x:Name="waypoint_token_2_1" Height="18" Text="???" Grid.Column="0" Background="#FF383838" Foreground="White" BorderBrush="#FFB5B5B5"/>
+                <TextBox Tag="int8:9" TextChanged="scripted_obj_index_TextChanged" x:Name="waypoint_token_2_2" Height="18" Text="???" Grid.Column="1" Background="#FF383838" Foreground="White" BorderBrush="#FFB5B5B5"/>
+                <TextBox Tag="int8:10" TextChanged="scripted_obj_index_TextChanged" x:Name="waypoint_token_2_3" Height="18" Text="???" Grid.Column="2" Background="#FF383838" Foreground="White" BorderBrush="#FFB5B5B5"/>
+                <TextBox Tag="int8:11" TextChanged="scripted_obj_index_TextChanged" x:Name="waypoint_token_2_4" Height="18" Text="???" Grid.Column="3" Background="#FF383838" Foreground="White" BorderBrush="#FFB5B5B5"/>
+            </Grid>
+            <TextBox Tag="int16:12" TextChanged="scripted_obj_index_TextChanged" x:Name="waypoint_string_index" Height="18" Text="???" Width="85" Background="#FF383838" Foreground="White" BorderBrush="#FFB5B5B5"/>
+            <TextBox Tag="int16:14" TextChanged="scripted_obj_index_TextChanged" x:Name="waypoint_icon" Height="18" Text="???" Width="85" Background="#FF383838" Foreground="White" BorderBrush="#FFB5B5B5"/>
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+                <TextBox Tag="int32:16" TextChanged="scripted_obj_index_TextChanged" x:Name="waypoint_vis_type" Height="18" Text="???" Grid.Column="0" Background="#FF383838" Foreground="White" BorderBrush="#FFB5B5B5"/>
+                <TextBox Tag="int32:20" TextChanged="scripted_obj_index_TextChanged" x:Name="waypoint_vis_players" Height="18" Text="???" Grid.Column="1" Background="#FF383838" Foreground="White" BorderBrush="#FFB5B5B5"/>
+            </Grid>
+            <TextBox Tag="int8:24" TextChanged="scripted_obj_index_TextChanged" x:Name="waypoint_priority" Height="18" Text="???" Width="85" Background="#FF383838" Foreground="White" BorderBrush="#FFB5B5B5"/>
+            <TextBox Tag="int8:25" TextChanged="scripted_obj_index_TextChanged" x:Name="waypoint_timer" Height="18" Text="???" Width="85" Background="#FF383838" Foreground="White" BorderBrush="#FFB5B5B5"/>
+            <TextBox Tag="int8:26" TextChanged="scripted_obj_index_TextChanged" x:Name="waypoint_min_range" Height="18" Text="???" Width="85" Background="#FF383838" Foreground="White" BorderBrush="#FFB5B5B5"/>
+            <TextBox Tag="int8:27" TextChanged="scripted_obj_index_TextChanged" x:Name="waypoint_max_range" Height="18" Text="???" Width="85" Background="#FF383838" Foreground="White" BorderBrush="#FFB5B5B5"/>
+
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+                <TextBox Tag="int32:28" TextChanged="scripted_obj_index_TextChanged" x:Name="pickup_perms_type" Height="18" Text="???" Grid.Column="0" Background="#FF383838" Foreground="White" BorderBrush="#FFB5B5B5"/>
+                <TextBox Tag="int32:32" TextChanged="scripted_obj_index_TextChanged" x:Name="pickup_perms_players" Height="18" Text="???" Grid.Column="1" Background="#FF383838" Foreground="White" BorderBrush="#FFB5B5B5"/>
+            </Grid>
+
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+                <TextBox Tag="int32:36" TextChanged="scripted_obj_index_TextChanged" x:Name="spawn_perms_type" Height="18" Text="???" Grid.Column="0" Background="#FF383838" Foreground="White" BorderBrush="#FFB5B5B5"/>
+                <TextBox Tag="int32:40" TextChanged="scripted_obj_index_TextChanged" x:Name="spawn_perms_players" Height="18" Text="???" Grid.Column="1" Background="#FF383838" Foreground="White" BorderBrush="#FFB5B5B5"/>
+            </Grid>
+
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+                <TextBox Tag="int32:44" TextChanged="scripted_obj_index_TextChanged" x:Name="boundary_vis_perms_type" Height="18" Text="???" Grid.Column="0" Background="#FF383838" Foreground="White" BorderBrush="#FFB5B5B5"/>
+                <TextBox Tag="int32:48" TextChanged="scripted_obj_index_TextChanged" x:Name="boundary_vis_perms_players" Height="18" Text="???" Grid.Column="1" Background="#FF383838" Foreground="White" BorderBrush="#FFB5B5B5"/>
+            </Grid>
+            <TextBox Tag="int32:52" TextChanged="scripted_obj_index_TextChanged" x:Name="boundary_player_color" Height="18" Text="???" Width="85" Background="#FF383838" Foreground="White" BorderBrush="#FFB5B5B5"/>
+            <TextBox Tag="int32:56" TextChanged="scripted_obj_index_TextChanged" x:Name="object_identifier" Height="18" Text="???" Width="85" Background="#FF383838" Foreground="White" BorderBrush="#FFB5B5B5"/>
+            
+            <TextBox Tag="int32:60" TextChanged="scripted_obj_index_TextChanged" x:Name="object_object0" Height="18" Text="???" Width="85" Background="#FF383838" Foreground="White" BorderBrush="#FFB5B5B5"/>
+            <TextBox Tag="int32:64" TextChanged="scripted_obj_index_TextChanged" x:Name="object_object1" Height="18" Text="???" Width="85" Background="#FF383838" Foreground="White" BorderBrush="#FFB5B5B5"/>
+            <TextBox Tag="int32:68" TextChanged="scripted_obj_index_TextChanged" x:Name="object_object2" Height="18" Text="???" Width="85" Background="#FF383838" Foreground="White" BorderBrush="#FFB5B5B5"/>
+            <TextBox Tag="int32:72" TextChanged="scripted_obj_index_TextChanged" x:Name="object_object3" Height="18" Text="???" Width="85" Background="#FF383838" Foreground="White" BorderBrush="#FFB5B5B5"/>
+            
+            <TextBox Tag="int8:76" TextChanged="scripted_obj_index_TextChanged" x:Name="object_team0" Height="18" Text="???" Width="85" Background="#FF383838" Foreground="White" BorderBrush="#FFB5B5B5"/>
+            <TextBox Tag="int8:77" TextChanged="scripted_obj_index_TextChanged" x:Name="object_team1" Height="18" Text="???" Width="85" Background="#FF383838" Foreground="White" BorderBrush="#FFB5B5B5"/>
+            
+            <TextBox Tag="int16:78" TextChanged="scripted_obj_index_TextChanged" x:Name="object_number0" Height="18" Text="???" Width="85" Background="#FF383838" Foreground="White" BorderBrush="#FFB5B5B5"/>
+            <TextBox Tag="int16:80" TextChanged="scripted_obj_index_TextChanged" x:Name="object_number1" Height="18" Text="???" Width="85" Background="#FF383838" Foreground="White" BorderBrush="#FFB5B5B5"/>
+            <TextBox Tag="int16:82" TextChanged="scripted_obj_index_TextChanged" x:Name="object_number2" Height="18" Text="???" Width="85" Background="#FF383838" Foreground="White" BorderBrush="#FFB5B5B5"/>
+            <TextBox Tag="int16:84" TextChanged="scripted_obj_index_TextChanged" x:Name="object_number3" Height="18" Text="???" Width="85" Background="#FF383838" Foreground="White" BorderBrush="#FFB5B5B5"/>
+            <TextBox Tag="int16:86" TextChanged="scripted_obj_index_TextChanged" x:Name="object_number4" Height="18" Text="???" Width="85" Background="#FF383838" Foreground="White" BorderBrush="#FFB5B5B5"/>
+            <TextBox Tag="int16:88" TextChanged="scripted_obj_index_TextChanged" x:Name="object_number5" Height="18" Text="???" Width="85" Background="#FF383838" Foreground="White" BorderBrush="#FFB5B5B5"/>
+            <TextBox Tag="int16:90" TextChanged="scripted_obj_index_TextChanged" x:Name="object_number6" Height="18" Text="???" Width="85" Background="#FF383838" Foreground="White" BorderBrush="#FFB5B5B5"/>
+            <TextBox Tag="int16:92" TextChanged="scripted_obj_index_TextChanged" x:Name="object_number7" Height="18" Text="???" Width="85" Background="#FF383838" Foreground="White" BorderBrush="#FFB5B5B5"/>
+            <TextBox Tag="int16:94" TextChanged="scripted_obj_index_TextChanged" x:Name="unknown_2byte" Height="18" Text="???" Width="85" Background="#FF383838" Foreground="White" BorderBrush="#FFB5B5B5"/>
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="3*"/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+                <TextBox Tag="int24:96" TextChanged="scripted_obj_index_TextChanged" x:Name="object_timer0"      Height="18" Text="???" Grid.Column="0" Background="#FF383838" Foreground="White" BorderBrush="#FFB5B5B5"/>
+                <TextBox Tag="int8:99" TextChanged="scripted_obj_index_TextChanged"  x:Name="object_timer0_rate" Height="18" Text="???" Grid.Column="1" Background="#FF383838" Foreground="White" BorderBrush="#FFB5B5B5"/>
+            </Grid>
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="3*"/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+                <TextBox Tag="int24:100" TextChanged="scripted_obj_index_TextChanged" x:Name="object_timer1"      Height="18" Text="???" Grid.Column="0" Background="#FF383838" Foreground="White" BorderBrush="#FFB5B5B5"/>
+                <TextBox Tag="int8:103" TextChanged="scripted_obj_index_TextChanged"  x:Name="object_timer1_rate" Height="18" Text="???" Grid.Column="1" Background="#FF383838" Foreground="White" BorderBrush="#FFB5B5B5"/>
+            </Grid>
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="3*"/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+                <TextBox Tag="int24:104" TextChanged="scripted_obj_index_TextChanged" x:Name="object_timer2"      Height="18" Text="???" Grid.Column="0" Background="#FF383838" Foreground="White" BorderBrush="#FFB5B5B5"/>
+                <TextBox Tag="int8:107" TextChanged="scripted_obj_index_TextChanged"  x:Name="object_timer2_rate" Height="18" Text="???" Grid.Column="1" Background="#FF383838" Foreground="White" BorderBrush="#FFB5B5B5"/>
+            </Grid>
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="3*"/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+                <TextBox Tag="int24:108" TextChanged="scripted_obj_index_TextChanged" x:Name="object_timer3"      Height="18" Text="???" Grid.Column="0" Background="#FF383838" Foreground="White" BorderBrush="#FFB5B5B5"/>
+                <TextBox Tag="int8:111"  TextChanged="scripted_obj_index_TextChanged" x:Name="object_timer3_rate" Height="18" Text="???" Grid.Column="1" Background="#FF383838" Foreground="White" BorderBrush="#FFB5B5B5"/>
+            </Grid>
+            <TextBox Tag="int8:112" TextChanged="scripted_obj_index_TextChanged" x:Name="object_player0" Height="18" Text="???" Width="85" Background="#FF383838" Foreground="White" BorderBrush="#FFB5B5B5"/>
+            <TextBox Tag="int8:113" TextChanged="scripted_obj_index_TextChanged" x:Name="object_player1" Height="18" Text="???" Width="85" Background="#FF383838" Foreground="White" BorderBrush="#FFB5B5B5"/>
+            <TextBox Tag="int8:114" TextChanged="scripted_obj_index_TextChanged" x:Name="object_player2" Height="18" Text="???" Width="85" Background="#FF383838" Foreground="White" BorderBrush="#FFB5B5B5"/>
+            <TextBox Tag="int8:115" TextChanged="scripted_obj_index_TextChanged" x:Name="object_player3" Height="18" Text="???" Width="85" Background="#FF383838" Foreground="White" BorderBrush="#FFB5B5B5"/>
+
+            <TextBox Tag="int32:116" TextChanged="scripted_obj_index_TextChanged" x:Name="unknown_timer" Height="18" Text="???" Width="85" Background="#FF383838" Foreground="White" BorderBrush="#FFB5B5B5"/>
+
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+                <TextBox Tag="int32:120" TextChanged="scripted_obj_index_TextChanged" x:Name="progress_bar_perms_type" Height="18" Text="???" Grid.Column="0" Background="#FF383838" Foreground="White" BorderBrush="#FFB5B5B5"/>
+                <TextBox Tag="int32:124" TextChanged="scripted_obj_index_TextChanged" x:Name="progress_bar_perms_players" Height="18" Text="???" Grid.Column="1" Background="#FF383838" Foreground="White" BorderBrush="#FFB5B5B5"/>
+            </Grid>
+            <TextBox Tag="int32:128" TextChanged="scripted_obj_index_TextChanged" x:Name="unknown_4byte" Height="18" Text="???" Width="85" Background="#FF383838" Foreground="White" BorderBrush="#FFB5B5B5"/>
+        </StackPanel>
+    </Grid>
+</UserControl>

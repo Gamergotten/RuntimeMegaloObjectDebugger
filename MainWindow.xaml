@@ -1,0 +1,58 @@
+﻿<Window x:Class="RuntimeMegaloObjectDebugger.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:RuntimeMegaloObjectDebugger"
+        mc:Ignorable="d"
+        Title="MegaloObjectDebug" Height="350" Width="400">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="25"/>
+            <RowDefinition />
+        </Grid.RowDefinitions>
+
+        <Grid Background="#FF353535">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="90"/>
+                <ColumnDefinition Width="65"/>
+                <ColumnDefinition Width="20"/>
+                <ColumnDefinition Width="60"/>
+                <ColumnDefinition />
+            </Grid.ColumnDefinitions>
+
+            <Button Content="Attempt Hook" Grid.Column="0" Background="#FF373737" BorderBrush="#FF929292" Foreground="White" Click="Attempt_hook_button_press"/>
+            <Button Content="Load data" Grid.Column="1" Background="#FF373737" BorderBrush="#FF929292" Foreground="White" Click="Load_objs_button_press"/>
+            <CheckBox x:Name="loop_box" Grid.Column="2" VerticalAlignment="Center" HorizontalAlignment="Left" Background="#FF373737" BorderBrush="#FF929292" Foreground="White" Checked="loop_box_Checked"/>
+            <Button Content="Clear all" Grid.Column="3" Background="#FF373737" BorderBrush="#FF929292" Foreground="White"/>
+            <TextBlock x:Name="debug_text" Text="nothing to display" Grid.Column="4" Foreground="White" />
+        </Grid>
+        <Border Grid.Row="1" BorderThickness="1" Background="#FF2B2B2B" BorderBrush="#FF717171">
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="20"/>
+                    <RowDefinition Height="5"/>
+                    <RowDefinition />
+                </Grid.RowDefinitions>
+                
+                <Grid Grid.Row="0" Background="#FF353535">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="Auto"/>
+                        <ColumnDefinition Width="Auto"/>
+                        <ColumnDefinition Width="Auto"/>
+                        <ColumnDefinition Width="*" />
+                    </Grid.ColumnDefinitions>
+                    <TextBlock x:Name="objs_static" Text="Objs Static: ?" Grid.Column="0" Margin="5,0,0,0" Foreground="White"/>
+                    <TextBlock x:Name="objs_count" Text="Objs Count: ?" Grid.Column="1" Margin="5,0,0,0" Foreground="White"/>
+                    <TextBlock x:Name="objs_current" Text="Objs Current: ?" Grid.Column="2" Margin="5,0,0,0" Foreground="White"/>
+                    <TextBox x:Name="megalo_address" Text="0x????????" Grid.Column="3" Margin="5,0,0,0" Foreground="White" Background="#FF353535" BorderBrush="#FF7F7F7F"/>
+                </Grid>
+                <Border Grid.Row="2" BorderThickness="1" Background="#FF464646" BorderBrush="#FF6D6D6D">
+                    <ScrollViewer>
+                        <StackPanel x:Name="objects_panel"/>
+                    </ScrollViewer>
+                </Border>
+            </Grid>
+        </Border>
+    </Grid>
+</Window>

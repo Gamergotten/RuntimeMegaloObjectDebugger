@@ -1,0 +1,32 @@
+﻿<UserControl x:Class="RuntimeMegaloObjectDebugger.MegaloObject"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:RuntimeMegaloObjectDebugger"
+             mc:Ignorable="d" >
+    <Grid>
+        <Border Background="#FF525252" BorderBrush="#FFA7A7A7" BorderThickness="1">
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="30"/>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+                <Border>
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition />
+                            <ColumnDefinition Width="30"/>
+                        </Grid.ColumnDefinitions>
+                        <TextBlock x:Name="meg_obj_name" Text="meg_obj#?" VerticalAlignment="Center" HorizontalAlignment="Left" Margin="10,0,0,0" Foreground="White" />
+
+                        <Button x:Name="expand_button" Content="+" Grid.Column="1" VerticalAlignment="Center" HorizontalAlignment="Center" Width="20" Height="20" Background="#FF484848" BorderBrush="#FFBFBFBF" Foreground="White" Click="toggle_data_button_press"/>
+                    </Grid>
+                </Border>
+                <Grid x:Name="data_panel" Grid.Row="1">
+                    
+                </Grid>
+            </Grid>
+        </Border>
+    </Grid>
+</UserControl>
